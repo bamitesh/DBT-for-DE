@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="Databricks" uuid="c2df9612-ea98-4f76-91be-a3bbfc9dd7d7">
+      <driver-ref>databricks</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.databricks.client.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:databricks://dbc-eb8eae33-ca37.cloud.databricks.com:443/dbt_schema;transportMode=http;ssl=1;AuthMech=3;httpPath=/sql/1.0/warehouses/30dfd089d7e2c7cd</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+  </component>
+</project>

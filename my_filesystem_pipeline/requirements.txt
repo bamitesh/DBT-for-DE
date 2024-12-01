@@ -1,0 +1,3 @@
+dlt[databricks,filesystem]>=1.4.0
+dlt[databricks]>=0.4.3a0
+openpyxl>=3.0.0
