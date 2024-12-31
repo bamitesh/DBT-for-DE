@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:databricks://dbc-eb8eae33-ca37.cloud.databricks.com:443/dbt_schema;transportMode=http;ssl=1;AuthMech=3;httpPath=/sql/1.0/warehouses/30dfd089d7e2c7cd</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="Snowflake-Learn" uuid="495c027f-535e-4ab2-ba82-5d64f0ce132e">
+      <driver-ref>snowflake</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>net.snowflake.client.jdbc.SnowflakeDriver</jdbc-driver>
+      <jdbc-url>jdbc:snowflake://https://uzkypei-oi74526.snowflakecomputing.com:443?warehouse=COMPUTE_WH&amp;db=AIRBNB</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
