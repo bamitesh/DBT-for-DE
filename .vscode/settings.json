@@ -1,4 +1,9 @@
 {
     "dbt.enableNewLineagePanel": true,
-    "dbt.perspectiveTheme": "Monokai"
+    "dbt.perspectiveTheme": "Monokai",
+    "terminal.integrated.fontFamily": "monospace",
+    "files.associations": {
+        "*.yaml": "yaml",
+        "*.yml": "yaml"
+    }
 }
