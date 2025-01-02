@@ -1,12 +1,14 @@
-
-with raw_reviews as (
-    select * from airbnb.raw.RAW_REVIEWS
+WITH raw_reviews AS (
+    SELECT
+        *
+    FROM
+        airbnb.raw.raw_reviews
 )
-
-select
+SELECT
     listing_id,
-    date as review_date,
-    reviewer_name ,
-    comments as review_text,
-    sentiment as review_sentiment
-from raw_reviews
+    DATE AS review_date,
+    reviewer_name,
+    comments AS review_text,
+    sentiment AS review_sentiment
+FROM
+    raw_reviews

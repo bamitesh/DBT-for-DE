@@ -1,0 +1,22 @@
+models:
+  - name: dim_hosts_cleansed
+    description: The 'dim_hosts_cleansed' model is a transformation of the 'src_hosts' table from the 'AIRBNB.DEV' database. It contains information about Airbnb hosts, including their ID, name, whether they are a superhost, and the timestamps for when their information was created and last updated. The 'host_name' column is cleansed to replace any null values with 'Anonymous'.
+    columns:
+      - name: host_id
+        description: A unique identifier for each host. This is a numeric field.
+        data_type: number
+        data_tests:
+          - unique
+          - not_null
+      - name: host_name
+        description: The name of the host. If the host's name is not provided, it is replaced with 'Anonymous'. This is a string field.
+        data_type: varchar
+      - name: is_superhost
+        description: Indicates whether the host is a superhost or not. This is a string field.
+        data_type: varchar
+      - name: created_at
+        description: The timestamp when the host record was first created in the database. The format is 'YYYY-MM-DD HH:MI:SS'.
+        data_type: timestamp_ntz
+      - name: updated_at
+        description: The timestamp when the host record was last updated in the database. The format is 'YYYY-MM-DD HH:MI:SS'.
+        data_type: timestamp_ntz
