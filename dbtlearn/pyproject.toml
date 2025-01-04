@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "dbtlearn"
+version = "0.1.0"
+description = "This is a DBt learning module"
+authors = ["bamitesh <b.amitesh@gmail.com>"]
+license = "Arqiva"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+dbt-snowflake = "^1.9.0"
+dagster-dbt = "^0.25.6"
+dagster-webserver = "^1.9.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
